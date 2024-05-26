@@ -110,7 +110,14 @@ print(acc1.set_minimum_balance(3455, 3000))
 # print(acc1.transaction_history())
 print(acc1.freeze_account(3455))
 
+print(acc1.unfreeze_account(3455))
+
 print(acc1.view_account_details(3455))
 
-print(acc1.account_status())
+print(acc1.transfer_funds(3455, acc1, 1000))
+print(acc1.view_account_details(3455))
 
+
+# print(acc1.transaction_history())
+
+acc1.change_account_owner(1234, "Aber" )
